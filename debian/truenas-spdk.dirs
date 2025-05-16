@@ -1,0 +1,6 @@
+opt/spdk
+opt/spdk/usr
+opt/spdk/usr/bin
+opt/spdk/scripts
+opt/spdk/include
+opt/spdk/include/spdk

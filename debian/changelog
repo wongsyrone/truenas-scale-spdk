@@ -1,0 +1,6 @@
+spdk (24.09-1) UNRELEASED; urgency=medium
+
+  * Initial version of TrueNAS SPDK based on upstream
+  * debian packages
+
+ -- Brian Meagher <brian.meagher@truenas.com>  Thu, 08 May 2025 00:21:21 +0100
