@@ -12,3 +12,4 @@ isa-l-crypto/LICENSE usr/share/doc/truenas-spdk/isa-l-crypto
 libvfio-user/LICENSE usr/share/doc/truenas-spdk/libvfio-user
 ocf/LICENSE usr/share/doc/truenas-spdk/ocf
 xnvme/LICENSE usr/share/doc/truenas-spdk/xnvme
+debian/ix-nvmf.service usr/lib/systemd/system

@@ -1,0 +1,12 @@
+[Unit]
+Description=NVMe-oF(SPDK)
+After=network.target middlewared.service
+
+[Service]
+ExecStartPre=-midclt call nvmet.spdk.setup
+ExecStart=/opt/spdk/usr/bin/nvmf_tgt
+ExecStopPost=-midclt call nvmet.spdk.reset
+ExecStopPost=-midclt call nvmet.spdk.cleanup
+
+[Install]
+WantedBy=multi-user.target
