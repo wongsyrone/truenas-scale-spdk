@@ -4,9 +4,11 @@ After=network.target middlewared.service
 
 [Service]
 ExecStartPre=-midclt call nvmet.spdk.setup
-ExecStart=/opt/spdk/usr/bin/nvmf_tgt
+ExecStart=/opt/spdk/usr/bin/nvmf_tgt -r /var/run/spdk/spdk.sock
 ExecStopPost=-midclt call nvmet.spdk.reset
 ExecStopPost=-midclt call nvmet.spdk.cleanup
+RuntimeDirectory=spdk
+RuntimeDirectoryMode=0700
 
 [Install]
 WantedBy=multi-user.target
