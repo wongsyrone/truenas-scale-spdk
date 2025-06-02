@@ -1,0 +1,93 @@
+Source: spdk
+Section: net
+Priority: optional
+Maintainer: TrueNAS Development Team <dev@ixsystems.com>
+Standards-Version: 24.09
+Homepage: https://spdk.io/
+Build-Depends:
+ debhelper-compat (= 13),
+ linux-headers-truenas-production-amd64,
+ linux-headers-truenas-debug-amd64,
+ dh-python,
+ gcc,
+ g++,
+ make,
+ meson,
+ libcunit1-dev,
+ libaio-dev,
+ libssl-dev,
+ libjson-c-dev,
+ libcmocka-dev,
+ uuid-dev,
+ libiscsi-dev,
+ liburing-dev,
+ libkeyutils-dev,
+ libncurses5-dev,
+ libncursesw5-dev,
+ python3,
+ python3-pip,
+ python3-dev,
+ python3-pyelftools,
+ unzip,
+ libfuse3-dev,
+ patchelf,
+ nasm,
+ libnuma-dev,
+ libibverbs-dev,
+Vcs-Browser: https://github.com/truenas/spdk
+Vcs-Git: https://github.com/truenas/spdk
+
+Package: truenas-spdk
+Architecture: amd64
+Depends:
+ libarchive13,
+ libnuma1,
+ libibverbs1,
+ librdmacm1,
+ liburing2,
+ libjson-c5,
+ libuuid1,
+ libkeyutils1,
+ libaio1,
+ libnettle8,
+ liburing2,
+ libacl1,
+ liblzma5,
+ libzstd1,
+ liblz4-1,
+ zlib1g,
+ libxml2,
+ libnl-route-3-200,
+ libicu72,
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends}
+Provides:
+ spdk,
+Conflicts:
+ spdk
+Description: SPDK -- binaries
+ The Storage Performance Development Kit (SPDK) provides a set of tools and
+ libraries for writing high performance, scalable, user-mode storage
+ applications.
+ .
+ This is the binary package.
+
+Package: python3-truenas-spdk
+Architecture: all
+Section: python
+Depends:
+ python3-requests,
+ python3-setuptools,
+ ${misc:Depends},
+ ${python3:Depends},
+Conflicts:
+ python3-spdk,
+Provides:
+ python3-spdk,
+Description: Python3 modules for SPDK
+ The Storage Performance Development Kit (SPDK) provides a set of tools and
+ libraries for writing high performance, scalable, user-mode storage
+ applications.
+ .
+ This Python3 module is used to configure SPDK.

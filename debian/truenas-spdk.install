@@ -1,0 +1,15 @@
+# truenas-spdk
+usr/bin/nvmf_tgt opt/spdk/usr/bin
+usr/bin/spdk_nvme_identify opt/spdk/usr/bin
+scripts/common.sh opt/spdk/scripts
+scripts/rpc.py opt/spdk/scripts
+scripts/setup.sh opt/spdk/scripts
+include/spdk/pci_ids.h  opt/spdk/include/spdk
+dpdk/license/* usr/share/doc/truenas-spdk/dpdk/license
+intel-ipsec-mb/LICENSE usr/share/doc/truenas-spdk/intel-ipsec-mb
+isa-l/LICENSE usr/share/doc/truenas-spdk/isa-l
+isa-l-crypto/LICENSE usr/share/doc/truenas-spdk/isa-l-crypto
+libvfio-user/LICENSE usr/share/doc/truenas-spdk/libvfio-user
+ocf/LICENSE usr/share/doc/truenas-spdk/ocf
+xnvme/LICENSE usr/share/doc/truenas-spdk/xnvme
+debian/ix-nvmf.service usr/lib/systemd/system
