@@ -7,7 +7,6 @@ Homepage: https://spdk.io/
 Build-Depends:
  debhelper-compat (= 13),
  linux-headers-truenas-production-amd64,
- linux-headers-truenas-debug-amd64,
  dh-python,
  gcc,
  g++,
