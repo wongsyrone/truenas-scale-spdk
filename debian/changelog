@@ -1,3 +1,9 @@
+spdk (24.09-1.1) UNRELEASED; urgency=medium
+
+  * Add scripts
+
+ -- Brian Meagher <brian.meagher@truenas.com>  Wed, 25 Jun 2025 19:28:14 +0100
+
 spdk (24.09-1) UNRELEASED; urgency=medium
 
   * Initial version of TrueNAS SPDK based on upstream
