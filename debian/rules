@@ -7,6 +7,7 @@ include /usr/share/dpkg/architecture.mk
 include /usr/share/dpkg/pkg-info.mk
 
 # CFLAGS += -D_FORTIFY_SOURCE=2
+export DPDKBUILD_FLAGS="-Dcpu_instruction_set=generic"
 
 DESTDIR=$(CURDIR)/debian/tmp
 
